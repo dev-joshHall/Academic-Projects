@@ -1,0 +1,136 @@
+#createArea {
+    width: 400px;
+    display: none;
+    position: none;
+    left: 50%;
+    margin-left: 275px;
+    border-radius: 6px 6px 6px 6px;
+    border: 1px solid black;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, #dbdbdb, #808080);
+}
+
+#charTable {
+    width: 400px;
+    display: table;
+    position: fixed;
+    left: 50%;
+    margin-left: -200px;
+    border-radius: 6px 6px 6px 6px;
+    border: 1px solid black;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, #dbdbdb, #808080);
+}
+
+#editArea {
+    width: 400px;
+    display: none;
+    position: fixed;
+    left: 50%;
+    margin-left: -200px;
+    border-radius: 6px 6px 6px 6px;
+    border: 1px solid black;
+    padding: 20px;
+    background-image: linear-gradient(to bottom right, #dbdbdb, #808080);
+}
+
+#formTitle {
+    display: table-caption;
+    text-align: center;
+    font-size: 30;
+    font-weight: bold;
+    background-color: #dbdbdb;
+    border: 1px solid black;
+    border-radius: 6px 6px 6px 6px;
+}
+
+#f-Title {
+    display: table-caption;
+    text-align: center;
+    font-size: 30;
+    font-weight: bold;
+    background-color: #dbdbdb;
+    border: 1px solid black;
+    border-radius: 6px 6px 6px 6px;
+}
+
+#tableTitle {
+    display: table-caption;
+    text-align: center;
+    font-size: 30;
+    font-weight: bold;
+    background-color: #dbdbdb;
+    border: 1px solid black;
+    border-radius: 6px 6px 6px 6px;
+}
+
+#tableHeader {
+    display: none;
+}
+
+#t-Header {
+    display: none;
+}
+
+#tableH {
+    display: table-header-group;
+    background-color: gray;
+    font-weight: bold;
+    font-size: 25;
+}
+
+.th-cell {
+    display: table-cell;
+    padding: 10px;
+    text-align: justify;
+}
+
+#tableBody {
+    display: table-row-group;
+}
+
+#t-Body {
+    display: table-row-group;
+}
+
+#tableB {
+    display: table-row-group;
+}
+
+.tableRow {
+    display: table-row;
+}
+
+.tableR {
+    display: table-row;
+}
+
+.tb-cell {
+    display: table-cell;
+    padding: 10px;
+}
+
+.tableC {
+    display: table-cell;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #e3e3e3;
+}
+
+.tableBtn {
+    display: table-cell;
+    border: 1px solid black;
+    background-color: #e3e3e3;
+    width: 100%;
+}
+
+#newChar {
+    margin-top: 30px;
+}
+
+body {
+    background-image: url("../img/dragon.jpg");
+    background-color: grey;
+    background-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}

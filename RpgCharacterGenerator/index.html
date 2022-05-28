@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>RPG Character Generator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+    <div id="createArea">
+        <h1 id="formTitle">New Character</h1>
+        <div id="tableHeader">
+            <div class="th-cell"></div>
+            <div class="th-cell"></div>
+            <div class="th-cell"></div>
+        </div>
+        <div id="tableBody">
+            <div class="tableRow">
+                <div class="tb-cell">Character name:</div>
+                <div class="tb-cell"><input type="text" id="nameVal"></div>
+                <div class="tb-cell" id="nameError">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Strength:</div>
+                <div class="tb-cell" id="strengthVal">0</div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Dexterity:</div>
+                <div class="tb-cell" id="dexVal">0</div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Constitution:</div>
+                <div class="tb-cell" id="conVal">0</div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Itelligence:</div>
+                <div class="tb-cell" id="itelVal">0</div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Wisdom:</div>
+                <div class="tb-cell" id="wisdomVal">0</div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Charisma:</div>
+                <div class="tb-cell" id="charismaVal">0</div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">&nbsp</div>
+                <div class="tb-cell" id="rerollButton"><button>Re-roll</button></div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Race:</div>
+                <div class="tb-cell">
+                    <form>
+                        <select name="raceVal" id="raceVal">
+                            <option value="none"></option>
+                            <option value="human">Human</option>
+                            <option value="elf">Elf</option>
+                            <option value="dwarf">Dwarf</option>
+                            <option value="halfling">Halfling</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="tb-cell" id="raceError">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Class:</div>
+                <div class="tb-cell">
+                    <form>
+                        <select name="classVal" id="classVal">
+                            <option value="none"></option>
+                            <option value="fighter">Fighter</option>
+                            <option value="wizard">Wizard</option>
+                            <option value="cleric">Cleric</option>
+                            <option value="thief">Thief</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="tb-cell" id="classError">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Gender:</div>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <div class="tb-cell" id="genderError">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Right-handed?</div>
+                <div class="tb-cell">
+                    <input type="checkbox" id="rightHanded" name="rightHanded" value="Yes">
+                </div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell"><input type="button" id="submitButton" value="Submit"></div>
+                <div class="tb-cell">&nbsp</div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+        </div>
+    </div>
+    <div id="charTable">
+        <h1 id="tableTitle">Characters</h1>
+        <div id="tableH">
+            <div class="th-cell">Name</div>
+            <div class="th-cell">Race</div>
+            <div class="th-cell">Class</div>
+            <div class="th-cell">Gender</div>
+            <div class="th-cell"></div>
+            <div class="th-cell"></div>
+        </div>
+        <div id="tableB">
+        </div>
+        <div id="newCharSpace"><input type="button" id="newChar" value="Create Character"></div>
+    </div>
+    <div id="editArea">
+        <h1 id="f-Title">Edit Character</h1>
+        <div id="t-Header">
+            <div class="th-cell"></div>
+            <div class="th-cell"></div>
+            <div class="th-cell"></div>
+        </div>
+        <div id="t-Body">
+            <div class="tableRow">
+                <div class="tb-cell">Character name:</div>
+                <div class="tb-cell"><input type="text" id="name-Val"></div>
+                <div class="tb-cell" id="name-Error">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Strength:</div>
+                <div class="tb-cell" id="strength-Val">0</div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Dexterity:</div>
+                <div class="tb-cell" id="dex-Val">0</div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Constitution:</div>
+                <div class="tb-cell" id="con-Val">0</div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Itelligence:</div>
+                <div class="tb-cell" id="itel-Val">0</div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Wisdom:</div>
+                <div class="tb-cell" id="wisdom-Val">0</div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Charisma:</div>
+                <div class="tb-cell" id="charisma-Val">0</div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">&nbsp</div>
+                <div class="tb-cell" id="reroll-Button"><button>Re-roll</button></div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Race:</div>
+                <div class="tb-cell">
+                    <form>
+                        <select name="race-Val" id="race-Val">
+                            <option value="none"></option>
+                            <option value="human">Human</option>
+                            <option value="elf">Elf</option>
+                            <option value="dwarf">Dwarf</option>
+                            <option value="halfling">Halfling</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="tb-cell" id="race-Error">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Class:</div>
+                <div class="tb-cell">
+                    <form>
+                        <select name="class-Val" id="class-Val">
+                            <option value="none"></option>
+                            <option value="fighter">Fighter</option>
+                            <option value="wizard">Wizard</option>
+                            <option value="cleric">Cleric</option>
+                            <option value="thief">Thief</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="tb-cell" id="class-Error">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Gender:</div>
+                <input type="radio" id="male1" name="gender1" value="male">
+                <label for="male1">Male</label>
+                <input type="radio" id="female1" name="gender1" value="female">
+                <label for="female1">Female</label>
+                <div class="tb-cell" id="gender-Error">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell">Right-handed?</div>
+                <div class="tb-cell">
+                    <input type="checkbox" id="right-Handed" name="right-Handed" value="Yes">
+                </div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+            <div class="tableRow">
+                <div class="tb-cell"><input type="button" id="submit-Button" value="Submit"></div>
+                <div class="tb-cell">&nbsp</div>
+                <div class="tb-cell">&nbsp</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
